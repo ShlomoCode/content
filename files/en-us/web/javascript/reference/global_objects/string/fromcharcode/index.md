@@ -9,7 +9,13 @@ browser-compat: javascript.builtins.String.fromCharCode
 
 The **`String.fromCharCode()`** static method returns a string created from the specified sequence of UTF-16 code units.
 
-{{EmbedInteractiveExample("pages/js/string-fromcharcode.html", "shorter")}}
+{{InteractiveExample("shorter")}}
+
+```js interactive-example
+console.log(String.fromCharCode(189, 43, 190, 61));
+// Expected output: "½+¾="
+
+```
 
 ## Syntax
 

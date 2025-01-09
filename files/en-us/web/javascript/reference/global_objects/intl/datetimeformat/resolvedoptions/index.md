@@ -9,7 +9,22 @@ browser-compat: javascript.builtins.Intl.DateTimeFormat.resolvedOptions
 
 The **`resolvedOptions()`** method of {{jsxref("Intl.DateTimeFormat")}} instances returns a new object with properties reflecting the options computed during initialization of this `DateTimeFormat` object.
 
-{{EmbedInteractiveExample("pages/js/intl-datetimeformat-prototype-resolvedoptions.html")}}
+{{InteractiveExample}}
+
+```js interactive-example
+const region1 = new Intl.DateTimeFormat('zh-CN', { timeZone: 'UTC' });
+const options1 = region1.resolvedOptions();
+
+console.log(options1.locale);
+// Expected output: "zh-CN"
+
+console.log(options1.calendar);
+// Expected output: "gregory"
+
+console.log(options1.numberingSystem);
+// Expected output: "latn"
+
+```
 
 ## Syntax
 

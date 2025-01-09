@@ -10,7 +10,7 @@ Quantifiers indicate numbers of characters or expressions to match.
 
 {{InteractiveExample("taller")}}
 
-```js
+```js interactive-example
 const ghostSpeak = 'booh boooooooh';
 const regexpSpooky = /bo{3,}h/;
 console.log(ghostSpeak.match(regexpSpooky));

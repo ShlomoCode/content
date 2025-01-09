@@ -9,7 +9,19 @@ browser-compat: javascript.statements.while
 
 The **`while`** statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.
 
-{{EmbedInteractiveExample("pages/js/statement-while.html")}}
+{{InteractiveExample}}
+
+```js interactive-example
+let n = 0;
+
+while (n < 3) {
+  n++;
+}
+
+console.log(n);
+// Expected output: 3
+
+```
 
 ## Syntax
 

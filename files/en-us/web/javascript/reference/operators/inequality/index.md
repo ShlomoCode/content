@@ -12,7 +12,22 @@ equal, returning a Boolean result.
 Unlike the [strict inequality](/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality) operator,
 it attempts to convert and compare operands that are of different types.
 
-{{EmbedInteractiveExample("pages/js/expressions-inequality.html")}}
+{{InteractiveExample}}
+
+```js interactive-example
+console.log(1 != 1);
+// Expected output: false
+
+console.log('hello' != 'hello');
+// Expected output: false
+
+console.log('1' != 1);
+// Expected output: false
+
+console.log(0 != false);
+// Expected output: false
+
+```
 
 ## Syntax
 

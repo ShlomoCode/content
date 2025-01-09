@@ -9,7 +9,22 @@ browser-compat: javascript.builtins.Intl.RelativeTimeFormat.formatToParts
 
 The **`formatToParts()`** method of {{jsxref("Intl.RelativeTimeFormat")}} instances returns an {{jsxref("Array")}} of objects representing the relative time format in parts that can be used for custom locale-aware formatting.
 
-{{EmbedInteractiveExample("pages/js/intl-relativetimeformat-prototype-formattoparts.html")}}
+{{InteractiveExample}}
+
+```js interactive-example
+const rtf1 = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+const parts = rtf1.formatToParts(10, 'seconds');
+
+console.log(parts[0].value);
+// Expected output: "in "
+
+console.log(parts[1].value);
+// Expected output: "10"
+
+console.log(parts[2].value);
+// Expected output: " seconds"
+
+```
 
 ## Syntax
 

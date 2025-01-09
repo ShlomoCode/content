@@ -14,7 +14,25 @@ Duplicates are omitted and the array is sorted in ascending lexicographical orde
 The method can be used to feature-test whether values are supported in a particular implementation and download a polyfill only if necessary.
 It can also be used to build UIs that allow users to select their preferred localized values, for example when the UI is created from WebGL or server-side.
 
-{{EmbedInteractiveExample("pages/js/intl-supportedvaluesof.html", "taller")}}
+{{InteractiveExample("taller")}}
+
+```js interactive-example
+console.log(Intl.supportedValuesOf('calendar'));
+console.log(Intl.supportedValuesOf('collation'));
+console.log(Intl.supportedValuesOf('currency'));
+console.log(Intl.supportedValuesOf('numberingSystem'));
+console.log(Intl.supportedValuesOf('timeZone'));
+console.log(Intl.supportedValuesOf('unit'));
+// Expected output: Array ['key'] (for each key)
+
+try {
+  Intl.supportedValuesOf('someInvalidKey');
+} catch (err) {
+  console.log(err.toString());
+  // Expected output: RangeError: invalid key: "someInvalidKey"
+}
+
+```
 
 ## Syntax
 

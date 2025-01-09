@@ -9,7 +9,25 @@ browser-compat: javascript.builtins.Intl.DateTimeFormat.formatToParts
 
 The **`formatToParts()`** method of {{jsxref("Intl.DateTimeFormat")}} instances allows locale-aware formatting of strings produced by this `Intl.DateTimeFormat` object.
 
-{{EmbedInteractiveExample("pages/js/intl-datetimeformat-prototype-formattoparts.html", "taller")}}
+{{InteractiveExample("taller")}}
+
+```js interactive-example
+const date = new Date(2012, 5);
+const options = {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+};
+const dateTimeFormat = new Intl.DateTimeFormat('en-US', options);
+
+const parts = dateTimeFormat.formatToParts(date);
+const partValues = parts.map((p) => p.value);
+
+console.log(partValues);
+// Expected output: "["Friday", ", ", "June", " ", "1", ", ", "2012"]"
+
+```
 
 ## Syntax
 

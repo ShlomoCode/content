@@ -9,7 +9,21 @@ browser-compat: javascript.builtins.Intl.DisplayNames.DisplayNames
 
 The **`Intl.DisplayNames()`** constructor creates {{jsxref("Intl.DisplayNames")}} objects.
 
-{{EmbedInteractiveExample("pages/js/intl-displaynames.html")}}
+{{InteractiveExample}}
+
+```js interactive-example
+const regionNamesInEnglish = new Intl.DisplayNames(['en'], { type: 'region' });
+const regionNamesInTraditionalChinese = new Intl.DisplayNames(['zh-Hant'], {
+  type: 'region',
+});
+
+console.log(regionNamesInEnglish.of('US'));
+// Expected output: "United States"
+
+console.log(regionNamesInTraditionalChinese.of('US'));
+// Expected output: "美國"
+
+```
 
 ## Syntax
 

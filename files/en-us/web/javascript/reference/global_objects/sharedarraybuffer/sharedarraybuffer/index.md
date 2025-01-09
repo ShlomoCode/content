@@ -12,7 +12,16 @@ browser-compat: javascript.builtins.SharedArrayBuffer.SharedArrayBuffer
 
 The **`SharedArrayBuffer()`** constructor creates {{jsxref("SharedArrayBuffer")}} objects.
 
-{{EmbedInteractiveExample("pages/js/sharedarraybuffer-constructor.html", "shorter")}}
+{{InteractiveExample("shorter")}}
+
+```js interactive-example
+// Create a SharedArrayBuffer with a size in bytes
+const buffer = new SharedArrayBuffer(8);
+
+console.log(buffer.byteLength);
+// Expected output: 8
+
+```
 
 ## Syntax
 

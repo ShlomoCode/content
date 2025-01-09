@@ -10,7 +10,20 @@ browser-compat: javascript.builtins.Boolean.valueOf
 The **`valueOf()`** method of {{jsxref("Boolean")}} values returns the primitive value of a
 {{jsxref("Boolean")}} object.
 
-{{EmbedInteractiveExample("pages/js/boolean-valueof.html")}}
+{{InteractiveExample}}
+
+```js interactive-example
+const x = new Boolean();
+
+console.log(x.valueOf());
+// Expected output: false
+
+const y = new Boolean('Mozilla');
+
+console.log(y.valueOf());
+// Expected output: true
+
+```
 
 ## Syntax
 

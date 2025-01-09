@@ -9,7 +9,22 @@ browser-compat: javascript.builtins.Reflect.getPrototypeOf
 
 The **`Reflect.getPrototypeOf()`** static method is like {{jsxref("Object.getPrototypeOf()")}}. It returns the prototype of the specified object.
 
-{{EmbedInteractiveExample("pages/js/reflect-getprototypeof.html")}}
+{{InteractiveExample}}
+
+```js interactive-example
+const object1 = {
+  property1: 42,
+};
+
+const proto1 = Reflect.getPrototypeOf(object1);
+
+console.log(proto1);
+// Expected output: Object {  }
+
+console.log(Reflect.getPrototypeOf(proto1));
+// Expected output: null
+
+```
 
 ## Syntax
 

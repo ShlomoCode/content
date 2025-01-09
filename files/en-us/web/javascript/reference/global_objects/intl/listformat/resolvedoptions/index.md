@@ -9,7 +9,23 @@ browser-compat: javascript.builtins.Intl.ListFormat.resolvedOptions
 
 The **`resolvedOptions()`** method of {{jsxref("Intl.ListFormat")}} instances returns a new object with properties reflecting the options computed during initialization of this `ListFormat` object.
 
-{{EmbedInteractiveExample("pages/js/intl-listformat-prototype-resolvedoptions.html")}}
+{{InteractiveExample}}
+
+```js interactive-example
+const deListFormatter1 = new Intl.ListFormat('de-DE', { type: 'disjunction' });
+const options1 = deListFormatter1.resolvedOptions();
+
+console.log(options1.locale);
+// Expected output (Firefox / Safari): "de-DE"
+// Expected output (Chrome): "de"
+
+console.log(options1.style);
+// Expected output: "long"
+
+console.log(options1.type);
+// Expected output: "disjunction"
+
+```
 
 ## Syntax
 
